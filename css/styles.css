@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100%;
+    background-color: #f0f0f0; /* Color de fondo para mayor claridad */
+    background-image:url('../img-learn-tutors/29.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+header {
+    margin: 3.5%;
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #59C6F1;
+}
+
+.principal-letter {
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    margin: 0%;
+    padding:0; 
+    line-height: 0%;
+}
+
+.learn{
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    font-size: 80px; 
+    margin: 0%; 
+    padding: 0%;
+    color: #59C6F1;
+}
+
+/* Estilos para el texto alineado a la izquierda del header*/
+.left-text {
+    text-align: left;
+}
+
+/* Estilos para las imágenes alineadas a la derecha del header*/
+.right-images {
+    display: flex;
+    align-items: center;
+}
+
+.right-images img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.flags{
+    max-width: 30%;
+    margin: 5px;
+    align-items: flex-end;
+}
+
+
+/*Imagen principal*/
+.centered-image {
+    position:absolute;
+    top: 65px;
+    left: -200px;
+    max-width: 90%;
+    max-height: 90%;
+    z-index: -1;
+}
+
+/*Titulo 2*/
+.text-container {
+    position: absolute;
+    top:130px;
+    right: 150px;
+    font-size: 38px;
+    color: #59C6F1;
+}
+
+/*Información del cuerpo*/
+.line-container1 {
+    position: relative;
+    right: -630px;
+    width: 500px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.line-container2 {
+    position: relative;
+    right: -580px;
+    width: 600px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.line-container3 {
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    right: -480px;
+    width: 800px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-line{
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    font-size: 27px;
+    text-align: center;
+    position: relative;
+    background-color: #F7DE32;
+    padding:10px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+}
+
+/*imagenes del final*/
+.image-container{
+    position: relative;
+    top: -30px;
+    left: 710px;
+    width: 600px;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+.footer-image{
+    margin-right: 180px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.footer-text1{
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    background-color: #F7DE32;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    left: 730px;
+    width: 300px;
+    /*box-sizing: border-box;*/
+}
+
