@@ -3,22 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    margin: 0;
-    height: 100%;
-    background-color: #f0f0f0; /* Color de fondo para mayor claridad */
+
+html, body{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    width: 100%;
     background-image:url('../img-learn-tutors/29.png');
     background-repeat: no-repeat;
     background-size:cover;
+    background-attachment: fixed;
 }
 
 header {
-    margin: 3.5%;
-    width: auto;
-    height: 80px;
+    width:100%;
+    height: 100px;
+    position: fixed;
+}
+
+.container-header{
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:2%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+}
+
+/*Contenerdor del texto "BIENVENIDOS A LEARN"*/
+.left-text{
+    margin: 2%;
     color: #59C6F1;
 }
 
@@ -26,87 +43,84 @@ header {
     font-family: "Lilita One", sans-serif;
     font-style: normal;
     margin: 0%;
-    padding:0; 
+    padding:0;
     line-height: 0%;
 }
 
 .learn{
     font-family: "Lilita One", sans-serif;
     font-style: normal;
-    font-size: 80px; 
-    margin: 0%; 
-    padding: 0%;
-    color: #59C6F1;
+    font-size: 81px;
 }
 
-/* Estilos para el texto alineado a la izquierda del header*/
-.left-text {
-    text-align: left;
+/*Contenedor del las imagenes de banderas*/
+.right-images{
+    display:flex;
+    align-items: flex-start;
 }
 
-/* Estilos para las imágenes alineadas a la derecha del header*/
-.right-images {
-    display: flex;
-    align-items: center;
-}
-
-.right-images img {
+.right-images img{
     width: 30px;
-    margin-left: 10px;
+    margin: 10px;
 }
-
-.flags{
-    max-width: 30%;
-    margin: 5px;
-    align-items: flex-end;
+ 
+/*Contenedor del cuerpo de la web*/
+.container-all{
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: calc(100% - 100px);
 }
-
-
 /*Imagen principal*/
-.centered-image {
-    position:absolute;
-    top: 65px;
-    left: -200px;
-    max-width: 90%;
-    max-height: 90%;
+.centered-image img {
+    position: fixed;
+    top: 52px;
+    max-width: 100%;
+    height: 100%;
+    left: 8%;
     z-index: -1;
+    box-sizing: border-box;
 }
 
-/*Titulo 2*/
+/*Titulo 2 "NUESTROS SERVICIOS"*/
 .text-container {
-    position: absolute;
-    top:130px;
-    right: 150px;
+    position: fixed;
+    padding-top: 100px;
+    width: auto;
+    height: 40px;
+    margin-top: 15px;
+    right: 11%;
     font-size: 38px;
     color: #59C6F1;
+    display: flex;
+    justify-content: center;
 }
 
 /*Información del cuerpo*/
 .line-container1 {
+    top:160px;
+    left: 48%;
     position: relative;
-    right: -630px;
     width: 500px;
-    padding: 0;
     box-sizing: border-box;
 }
 
 .line-container2 {
+    top:160px;
+    left: 44%;
     position: relative;
-    right: -580px;
     width: 600px;
-    padding: 0;
     box-sizing: border-box;
 }
 
 .line-container3 {
+    top:170px;
     font-family: "Lilita One", sans-serif;
     font-style: normal;
     font-size: 20px;
+    left: 35%;
     text-align: center;
     position: relative;
-    right: -480px;
     width: 800px;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -123,22 +137,30 @@ header {
 }
 
 /*imagenes del final*/
+a{ 
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .image-container{
     position: relative;
-    top: -30px;
-    left: 710px;
-    width: 600px;
+    top: 130px;
+    left: 56%;
+    width: 295px;
     padding: 0;
-    /*box-sizing: border-box;*/
+    text-align: center;
 }
 
 .footer-image{
-    margin-right: 180px;
     width: 80px;
     height: 80px;
     object-fit: cover;
+    padding: 0%;
 }
 
+/*Texto de Carla*/
 .footer-text1{
     font-family: "Lilita One", sans-serif;
     font-style: normal;
@@ -146,9 +168,115 @@ header {
     background-color: #F7DE32;
     position: relative;
     text-align: center;
-    top: 35px;
-    left: 730px;
-    width: 300px;
-    /*box-sizing: border-box;*/
+    top: 198px;
+    width: 235px;  
+    left: 58.5%;
+    border-radius: 50px;
 }
 
+.final-text{
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    top: 150px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    left: 51.5%;
+}
+
+/*Responsive design*/
+
+@media screen and (max-width: 1200px){
+
+    .container-header{
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .left-text{
+        font-size: 80%;
+    }
+
+    .learn{
+        font-size: 65px;
+    }
+    
+    .right-images{
+        height: 30%;
+        flex-direction: column;
+    }
+
+    .right-images img{
+        width: 15px;
+        margin-top: 0%;
+    }
+
+    .centered-image{
+        display: none;
+    }
+
+    .text-container{
+        font-size: 20px;
+        right: 0%;
+        left: 0%;
+        text-align: center;
+    }
+
+    .line-container1,
+    .line-container2{
+        top: 150px;
+        right: 0%;
+        left: 0%;
+        text-align: center;
+        width: auto;
+    }
+
+    .line-container3{
+        right: 0%;
+        left: 0%;
+        text-align: center;
+        width: auto;
+    }
+
+    .text-line {
+        font-size: 17px;
+    }
+
+    .line-container3{
+        font-size: 14px;
+    }
+
+    .image-container{
+        left: 0%;
+        right: 0%;
+        top: 150px;
+        width: auto;
+        margin-left: 16%;
+        margin-right: 16%;
+        text-align: center;
+    }
+
+    .footer-image{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-text1{
+        left:0%;
+        right: 0%;
+        width: auto;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 80%;
+        text-align: center;
+    }
+
+    .final-text{
+        left: 0;
+        right: 0;
+        top: 180px;
+        width: auto;
+        font-size: 15px;
+    }
+}
