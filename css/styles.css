@@ -189,17 +189,20 @@ a{
 
 @media screen and (max-width: 1200px){
 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    header{
+        position: relative;
+    }
+
     .container-header{
         justify-content: center;
-        margin-top: 15px;
-    }
-
-    .left-text{
-        font-size: 80%;
-    }
-
-    .learn{
-        font-size: 65px;
+        margin-top: 35px;
     }
     
     .right-images{
@@ -208,7 +211,7 @@ a{
     }
 
     .right-images img{
-        width: 15px;
+        width: 20px;
         margin-top: 0%;
     }
 
@@ -218,14 +221,16 @@ a{
 
     .text-container{
         font-size: 20px;
+        padding-top: 60px;
         right: 0%;
         left: 0%;
+        margin-top: 0;
         text-align: center;
     }
 
     .line-container1,
     .line-container2{
-        top: 150px;
+        top: 100px;
         right: 0%;
         left: 0%;
         text-align: center;
@@ -233,24 +238,22 @@ a{
     }
 
     .line-container3{
+        top:105px;
         right: 0%;
         left: 0%;
         text-align: center;
         width: auto;
+        font-size: 14px;
     }
 
     .text-line {
         font-size: 17px;
     }
 
-    .line-container3{
-        font-size: 14px;
-    }
-
     .image-container{
         left: 0%;
         right: 0%;
-        top: 150px;
+        top: 80px;
         width: auto;
         margin-left: 16%;
         margin-right: 16%;
@@ -263,6 +266,7 @@ a{
     }
 
     .footer-text1{
+        top: 128px;
         left:0%;
         right: 0%;
         width: auto;
@@ -275,7 +279,7 @@ a{
     .final-text{
         left: 0;
         right: 0;
-        top: 180px;
+        top: 115px;
         width: auto;
         font-size: 15px;
     }
