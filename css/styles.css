@@ -5,9 +5,7 @@
 }
 
 html, body{
-    height:100%;
-    display: flex;
-    flex-direction: column;
+    height:100vh;
 }
 
 body {
@@ -21,14 +19,14 @@ body {
 header {
     width:100%;
     height: 100px;
-    position: fixed;
+    position: relative;
+    top: 15px;
 }
 
 .container-header{
     height: 100%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top:2%;
     display: flex;
     justify-content: space-between;
 }
@@ -37,6 +35,12 @@ header {
 .left-text{
     margin: 2%;
     color: #59C6F1;
+    width: 235px;
+}
+
+.left-text > .principal-letter{
+    font-size: 29.7px;
+    text-align: center;
 }
 
 .principal-letter {
@@ -54,101 +58,115 @@ header {
 }
 
 /*Contenedor del las imagenes de banderas*/
-.right-images{
+.flags{
     display:flex;
     align-items: flex-start;
 }
 
-.right-images img{
+.flags img{
     width: 30px;
     margin: 10px;
+    transition: 0.3s ease;
+}
+
+.flags img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
  
 /*Contenedor del cuerpo de la web*/
-.container-all{
+.container-body{
+    position: relative;
     margin-left: 5%;
     margin-right: 5%;
     min-height: calc(100% - 100px);
 }
+
 /*Imagen principal*/
 .centered-image img {
     position: fixed;
-    top: 52px;
-    max-width: 100%;
-    height: 100%;
+    bottom: 0%;
     left: 8%;
-    z-index: -1;
+    z-index: -2;
     box-sizing: border-box;
+}
+
+/*Información del cuerpo*/
+.information {
+    position: absolute;
+    right: 0%;
+    top: 30px;
+    width: 65%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /*Titulo 2 "NUESTROS SERVICIOS"*/
 .text-container {
-    position: fixed;
-    padding-top: 100px;
+    position: relative;
     width: auto;
     height: 40px;
-    margin-top: 15px;
-    right: 11%;
     font-size: 38px;
     color: #59C6F1;
-    display: flex;
-    justify-content: center;
 }
 
-/*Información del cuerpo*/
 .line-container1 {
-    top:160px;
-    left: 48%;
     position: relative;
     width: 500px;
-    box-sizing: border-box;
 }
 
 .line-container2 {
-    top:160px;
-    left: 44%;
     position: relative;
     width: 600px;
-    box-sizing: border-box;
 }
 
 .line-container3 {
-    top:170px;
     font-family: "Lilita One", sans-serif;
     font-style: normal;
     font-size: 20px;
-    left: 35%;
-    text-align: center;
     position: relative;
-    width: 800px;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .text-line{
     font-family: "Lilita One", sans-serif;
     font-style: normal;
     font-size: 27px;
-    text-align: center;
-    position: relative;
     background-color: #F7DE32;
     padding:10px;
     margin-bottom: 15px;
     border-radius: 50px;
 }
 
-/*imagenes del final*/
+/*Carla*/
+.carla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+    top: 20px;
+    width: 295px; 
+    height: 80px;
+}
+
+.carla:hover{
+    transform: scale(1.1);
+}
+
 a{ 
-    display: inline-block;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
 }
 
 .image-container{
-    position: relative;
-    top: 130px;
-    left: 56%;
-    width: 295px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     padding: 0;
     text-align: center;
 }
@@ -164,25 +182,23 @@ a{
 .footer-text1{
     font-family: "Lilita One", sans-serif;
     font-style: normal;
-    font-size: 15px;
+    font-size: 14px;
     background-color: #F7DE32;
-    position: relative;
+    position: absolute;
     text-align: center;
-    top: 198px;
-    width: 235px;  
-    left: 58.5%;
+    width: 90%;  
     border-radius: 50px;
 }
 
+/*Texto final*/
 .final-text{
     font-family: "Lilita One", sans-serif;
     font-style: normal;
     font-size: 20px;
-    top: 150px;
-    width: 400px;
+    width: auto ;
     text-align: center;
     position: relative;
-    left: 51.5%;
+    top: 40px;
 }
 
 /*Responsive design*/
@@ -193,24 +209,34 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
         overflow: hidden;
     }
 
     header{
         position: relative;
+        top: 0%;
+        z-index: 10;
     }
 
     .container-header{
         justify-content: center;
-        margin-top: 35px;
+        margin-top: 70px;
+    }
+
+    .left-text > .principal-letter{
+        font-size: 25px;
+        text-align: center;
     }
     
-    .right-images{
+    .flags{
         height: 30%;
         flex-direction: column;
     }
 
-    .right-images img{
+    .flags img{
         width: 20px;
         margin-top: 0%;
     }
@@ -219,28 +245,31 @@ a{
         display: none;
     }
 
+    .container-body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 100px;
+        right: 0%;
+    }
+
     .text-container{
         font-size: 20px;
-        padding-top: 60px;
-        right: 0%;
-        left: 0%;
-        margin-top: 0;
-        text-align: center;
     }
 
     .line-container1,
     .line-container2{
-        top: 100px;
-        right: 0%;
-        left: 0%;
         text-align: center;
         width: auto;
     }
 
     .line-container3{
-        top:105px;
-        right: 0%;
-        left: 0%;
         text-align: center;
         width: auto;
         font-size: 14px;
@@ -251,36 +280,14 @@ a{
     }
 
     .image-container{
-        left: 0%;
-        right: 0%;
-        top: 80px;
-        width: auto;
-        margin-left: 16%;
-        margin-right: 16%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0;
         text-align: center;
     }
 
-    .footer-image{
-        width: 50px;
-        height: 50px;
-    }
-
-    .footer-text1{
-        top: 128px;
-        left:0%;
-        right: 0%;
-        width: auto;
-        margin-left: 20%;
-        margin-right: 20%;
-        font-size: 80%;
-        text-align: center;
-    }
-
-    .final-text{
-        left: 0;
-        right: 0;
-        top: 115px;
-        width: auto;
+    .final-text{ 
         font-size: 15px;
     }
 }

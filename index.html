@@ -1,75 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>learn-tutors web</title>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./img-learn-tutors/favicon.jpeg">
-  </head>
-  
-  <body>
-    <header>
-      <div class="container-header">
-        <div class="left-text"> 
-          <h1 class="principal-letter">BIENVENIDOS A</h1>
-          <h1 class="learn">LEARN</h1>
-        </div>
+<html lang="es">
 
-        <div class="right-images">
-          <img src="./img-learn-tutors/32.png" alt="Español" title="Español">
-          <img src="./img-learn-tutors/30.png" alt="Inglés" title="Inglés">
-          <img src="./img-learn-tutors/31.png" alt="Portugués" title="Portugués">
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>learn-tutors web</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="./img-learn-tutors/favicon.jpeg">
+</head>
+
+<body>
+  <header>
+    <div class="container-header">
+      <div class="left-text">
+        <h1 class="principal-letter" data-section="header" data-value="welcome">
+          BIENVENIDOS A</h1>
+        <h1 class="learn">LEARN</h1>
       </div>
 
-    </header>
-
-    <main class="container-all">
-      <div class="centered-image">
-        <img src="./img-learn-tutors/6.png" alt="Imagen en el Centro">
+      <div class="flags" id="flags">
+        <img src="./img-learn-tutors/32.png" alt="Español" title="Español" data-language="es">
+        <img src="./img-learn-tutors/30.png" alt="Portugués" title="Portugués" data-language="pt">
+        <img src="./img-learn-tutors/31.png" alt="Inglés" title="Inglés" data-language="en">
       </div>
+    </div>
 
+  </header>
+
+  <main class="container-body">
+    <figure class="centered-image">
+      <img src="./img-learn-tutors/6.png" alt="Imagen en el Centro">
+    </figure>
+
+    <div class="information">
       <div class="text-container">
-        <h2 class="principal-letter">NUESTROS SERVICIOS</h2> 
+        <h2 class="principal-letter" data-section="body" data-value="services">
+          NUESTROS SERVICIOS</h2>
       </div>
 
       <div class="line-container1">
-        <p class="text-line">CLASES ONLINE 100% PERSONALIZADAS</p>
-        <p class="text-line">TRADUCCIÓN DE TEXTOS</p>
-        <p class="text-line">PORTAFOLIO PARA EMPRESAS</p>
+        <p class="text-line" data-section="body" data-value="online_classes">CLASES ONLINE 100% PERSONALIZADAS</p>
+        <p class="text-line" data-section="body" data-value="text_translation">TRADUCCIÓN DE TEXTOS</p>
+        <p class="text-line" data-section="body" data-value="portfolio">PORTAFOLIO PARA EMPRESAS</p>
       </div>
 
       <div class="line-container2">
-        <P class="text-line">PREPARACIÓN EXÁMENES INTERNACIONALES</P>
-      </div> 
-
-      <div class="line-container3">
-        <p>ESTAMOS RENOVANDO NUESTRA PÁGINA WEB,
-          SOLICITA MÁS INFORMACIÓN EN <br>NUESTRO CHAT DE 
-          SERVICIO AL CLIENTE.
-        </p> 
+        <P class="text-line" data-section="body" data-value="exam_preparation">PREPARACIÓN EXÁMENES INTERNACIONALES</P>
       </div>
 
-      <div class="footer-text1">
-        <p>¡HOLA! SOY CARLA <br>SMART, ¿NECESITAS 
-          <br>AYUDA? ¡ESCRIBEME!
+      <div class="line-container3">
+        <p data-section="body" data-value="customer">ESTAMOS RENOVANDO NUESTRA PÁGINA WEB,
+          SOLICITA MÁS INFORMACIÓN EN <br>NUESTRO CHAT DE
+          SERVICIO AL CLIENTE.
         </p>
       </div>
 
-      <div class="image-container">
-        <a href="https://wa.me/573208324078">
-        <img class="footer-image" src="./img-learn-tutors/22.png">
-        <img class="footer-image" src="./img-learn-tutors/33.png"> 
-        </a>
+      <div class="carla">
+        <div class="footer-text1">
+          <p data-section="body" data-value="contact_us">¡HOLA! SOY CARLA <br>SMART, ¿NECESITAS
+            <br>AYUDA? ¡ESCRIBEME!
+          </p>
+        </div>
+
+        <div class="image-container">
+          <a href="https://wa.me/573208324078">
+            <img class="footer-image" src="./img-learn-tutors/22.png">
+            <img class="footer-image" src="./img-learn-tutors/33.png">
+          </a>
+        </div>
       </div>
 
       <div class="final-text">
-        <p>AGRADECEMOS TU COMPRENSIÓN</p>
-      </div-->
-    </main>
-  </body>
-</html>
+        <p data-section="body" data-value="thanks">AGRADECEMOS TU COMPRENSIÓN</p>
+      </div>
+    </div>
+  </main>
 
+  <script src="script/script.js"></script>
+</body>
+
+</html>

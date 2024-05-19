@@ -1,0 +1,15 @@
+{
+    "header": {
+        "welcome": "BIENVENIDOS A"
+    },
+    "body": {
+        "services": "NUESTROS SERVICIOS",
+        "online_classes": "CLASES ONLINE 100% PERSONALIZADAS",
+        "text_translation": "TRADUCCIÓN DE TEXTOS",
+        "portfolio": "PORTAFOLIO PARA EMPRESAS",
+        "exam_preparation": "PREPARACIÓN EXÁMENES INTERNACIONALES",
+        "customer": "ESTAMOS RENOVANDO NUESTRA PÁGINA WEB, SOLICITA MÁS INFORMACIÓN EN<br>NUESTRO CHAT DE SERVICIO AL CLIENTE.",
+        "contact_us": "¡HOLA! SOY CARLA <br>SMART, ¿NECESITAS<br>AYUDA? ¡ESCRIBEME!",
+        "thanks": "AGRADECEMOS TU COMPRENSIÓN"
+    }
+}

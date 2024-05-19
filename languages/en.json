@@ -1,0 +1,15 @@
+{
+    "header": {
+        "welcome": "WELCOME TO"
+    },
+    "body": {
+        "services": "OUR SERVICES",
+        "online_classes": "100% PERSONALIZED ONLINE CLASSES",
+        "text_translation": "TEXT TRANSLATION",
+        "portfolio": "COMPANY PORTFOLIO",
+        "exam_preparation": "INTERNATIONAL EXAM PREPARATION",
+        "customer": "WE ARE RENEWING OUR WEBSITE, REQUEST MORE INFORMATION IN <br>OUR CUSTOMER SERVICE CHAT.",
+        "contact_us": "HELLO! I'M CARLA <br>SMART, DO YOU NEED <br>HELP? WRITE TO ME!",
+        "thanks": "WE APPRECIATE YOUR UNDERSTANDING"
+    }
+}
